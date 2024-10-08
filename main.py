@@ -1,28 +1,13 @@
-from datetime import datetime
 from fastapi import FastAPI, Form, Request
 from fastapi.responses import RedirectResponse
 from fastapi.templating import Jinja2Templates
 import uvicorn
 
+from util import salvar_cadastro
+
 
 app = FastAPI()
 templates = Jinja2Templates(directory="templates")
-
-NOME_PASTA_STATIC="static/"
-NOME_PASTA_CADASTROS="dados/cadastros/"
-
-def ler_static(nome_arquivo: str) -> str:
-    caminho_arquivo_html = f"{NOME_PASTA_STATIC}{nome_arquivo}.html"
-    with open(caminho_arquivo_html, "r", encoding="utf-8") as arquivo:
-        conteudo_html = arquivo.read()
-    return conteudo_html
-
-def salvar_cadastro(nome, descricao, estoque, preco, categoria):
-    agora = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-    nome_arquivo = f"{NOME_PASTA_CADASTROS}cadastro_{agora}.txt"
-    conteudo = f"Nome: {nome}\nDescrição: {descricao}\nEstoque: {estoque}\nPreço: {preco}\nCategoria: {categoria}"
-    with open(nome_arquivo, "w") as arquivo:
-        arquivo.write(conteudo)
 
 @app.get("/")
 def get_root(request: Request):
