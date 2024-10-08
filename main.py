@@ -10,7 +10,7 @@ from util import salvar_cadastro
 produto_repo.criar_tabela()
 
 app = FastAPI()
-templates = Jinja2Templates(directory="templates")
+templates = Jinja2Templates(directory="templates") # adicionando comentário para commit
 
 @app.get("/")
 def get_root(request: Request):
