@@ -1,0 +1,5 @@
+Nome: iPhone 16 Pro Max
+Descricao: Último lançamento da Apple Inc. em 2024
+Estoque: 10000
+Preco: 12499
+Categoria: 3

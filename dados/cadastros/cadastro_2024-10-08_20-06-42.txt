@@ -1,0 +1,5 @@
+Nome: Lamen Suave Vit Sabor Tomate Nissin 85gr
+Descricao: Miojo sabor tomate edição da Turma da Mônica.
+Estoque: 500
+Preco: 3.49
+Categoria: 1

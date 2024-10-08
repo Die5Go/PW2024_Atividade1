@@ -1,0 +1,5 @@
+Nome: Violet Bent Backwards Over The Grass
+Descricao: O livro de poesia de estreia best-seller do New York Times de Lana Del Rey, Violet Bent Backwards Over the Grass.
+Estoque: 300
+Preco: 233.72
+Categoria: 7

@@ -13,7 +13,7 @@ def ler_static(nome_arquivo: str) -> str:
 def salvar_cadastro(nome, descricao, estoque, preco, categoria):
     agora = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
     nome_arquivo = f"{NOME_PASTA_CADASTROS}cadastro_{agora}.txt"
-    conteudo = f"Nome: {nome}\nDescrição: {descricao}\nEstoque: {estoque}\nPreço: {preco}\nCategoria: {categoria}"
+    conteudo = f"Nome: {nome}\nDescricao: {descricao}\nEstoque: {estoque}\nPreco: {preco}\nCategoria: {categoria}"
     with open(nome_arquivo, "w") as arquivo:
         arquivo.write(conteudo)
 

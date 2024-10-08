@@ -1,0 +1,5 @@
+Nome: TESTE
+Descrição: TESTE
+Estoque: 123
+Preço: 2.5
+Categoria: 7
